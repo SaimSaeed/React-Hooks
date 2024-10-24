@@ -1,16 +1,45 @@
 import './App.css';
+import Effect from './components/Effect';
+import Memo from './components/Memo';
 import Reducer from './components/Reducer';
 import State from "./components/State"
+import Ref from "./components/Ref"
+import Context from "./components/Context"
+
 
 function App() {
   return (
-<>
-<State/>
-<Reducer/>
+    <>
+      <div className="container" style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
+        <h1 style={{ textAlign: "center" }}>React Hooks</h1>
+        <div className="hooksContainer" style={{ display: "flex" ,backgroundColor:"whitesmoke",padding:"10px",borderTopLeftRadius:"10px",borderTopRightRadius:"10px"}}>
+          <div style={{ width: "30vw", textAlign:"left"}}>
+            <State />
+          </div>
+          <div style={{ width: "30vw" ,textAlign:"center"}}>
+            <Reducer />
+          </div>
+          <div style={{ width: "30vw",textAlign:'right' }}>
+            <Effect />
+          </div>  
+        </div>
+        <div className="hooksContainer" style={{ display: "flex",backgroundColor:"whitesmoke",padding:"10px",borderBottomLeftRadius:"10px",borderBottomRightRadius:"10px" }}>
+          <div style={{ width: "30vw", textAlign:"left"}}>
+            <Memo />
+          </div>
+          <div style={{ width: "30vw" ,textAlign:"center"}}>
+            <Ref/>
+          </div>
+          <div style={{ width: "30vw",textAlign:'right' }}>
+            <Context/>
+          </div>
+          
+        </div>
+
+      </div>
 
 
-
-</>
+    </>
   );
 }
 
