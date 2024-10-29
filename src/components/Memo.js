@@ -48,7 +48,7 @@ function Memo() {
        and the value that we get from the slow function is also rendered slowly */}
       <h1>Use Memo</h1>
       <input type='number' onChange={e => setNumber(e.target.value)} value={number} />
-      <button onClick={() => setDark(!dark)}>Change Mode</button>
+      <button onClick={() => setDark(!dark)}>Toggle Change!</button>
       <div style={darkModeHandler}>
         {doubleNumber}
       </div>

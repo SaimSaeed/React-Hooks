@@ -5,6 +5,9 @@ import Reducer from './components/Reducer';
 import State from "./components/State"
 import Ref from "./components/Ref"
 import Context from "./components/Context"
+import CallBack from './components/Callback/CallBack';
+import LayoutEffect from './components/LayoutEffect/LayoutEffect';
+import ModalExample from './components/LayoutEffect/ModalExample';
 
 
 function App() {
@@ -35,10 +38,23 @@ function App() {
           </div>
           
         </div>
+        <div className="hooksContainer" style={{ display: "flex",backgroundColor:"whitesmoke",padding:"10px",borderBottomLeftRadius:"10px",borderBottomRightRadius:"10px" }}>
+          <div style={{ width: "30vw", textAlign:"left"}}>
+            <CallBack/>
+          </div>
+          <div style={{ width: "30vw" ,textAlign:"center"}}>
+            <LayoutEffect/>
+          </div>
+          <div style={{ width: "30vw" ,textAlign:"center"}}>
+             <ModalExample/>
+          </div>
+        
+          
+        </div>
 
       </div>
 
-
+   {/* <ModalExample/> */}
     </>
   );
 }
